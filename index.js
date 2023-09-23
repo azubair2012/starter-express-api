@@ -9,11 +9,11 @@ const postRoute = require("./routers/postRoute");
 const getRoute = require("./routers/getRoute");
 const deleteRoute = require("./routers/deleteRoute");
 const updateRoute = require("./routers/updateRoute");
-// connectDb();
+connectDb();
 
 app.all("/", (req, res) => {
     console.log("Just got a request!");
     res.send("Hello...4!");
 });
 
-app.listen(port || 5000);
+app.listen(port || 3000);
